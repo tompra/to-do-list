@@ -6,3 +6,6 @@
 body{
     background-color: blueviolet;
 }
+.strike{
+    text-decoration: line-through;
+}
