@@ -24,6 +24,7 @@ $('#addBtn').on("click", (e) => {
     e.preventDefault();
     // 3. Get the value from the input field
     const inputField = $('#input').val()
+    
     // 2. By clicking we add a item to the order list
     const toDo = $(`<li> ${inputField} </li>`)
     
@@ -33,9 +34,9 @@ $('#addBtn').on("click", (e) => {
     // 4. Every added item should have an 'X'
     const makeAnX = $(`<button>X</button>`)
     $(toDo).append(makeAnX) 
+
     // 5. Make it disappear 
     makeAnX.on('click', deleteItem)
-
     function deleteItem(){
         $(toDo).remove()
     }
