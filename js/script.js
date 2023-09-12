@@ -20,17 +20,19 @@
 /////////////////////////////////////////////////////////////////////////
 
 //1. Adding event listener to the add buton
-$('#addBtn').on("click", () => {
+$('#addBtn').on("click", (e) => {
+    e.preventDefault();
     // 3. Get the value from the input field
     const inputField = $('#input').val()
     // 2. By clicking we add a item to the order list
     const toDo = $(`<li> ${inputField} </li>`)
-    $('#list').append($(toDo))
     
+    // Check if the inputField is empty
+    inputField === '' ? alert('You must enter some value!') : $('#list').append($(toDo))
+
     // 4. Every added item should have an 'X'
     const makeAnX = $(`<button>X</button>`)
     $(toDo).append(makeAnX) 
-
     // 5. Make it disappear 
     makeAnX.on('click', deleteItem)
 

@@ -1,10 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&display=swap');
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: blueviolet;
+    background-color: #095256;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+.container{
+    background-color: #5AAA95;
+    min-height: auto;
+    width: 350px;
+    margin: auto;
+    padding: 50px;
+    margin-top: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.container > *{
+    margin: 10px 0;
+}
+button{
+    display: inline-block;
+}
+form{
+    display: inline-block;
+}
+ol {
+    padding-left: 10px;
+}
+ol li{
+    text-transform: capitalize;
 }
 .strike{
     text-decoration: line-through;
