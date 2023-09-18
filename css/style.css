@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&display=swap');
-
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #F7F7F2;
+body {
+    background-color: #f7f7f2;
     font-family: 'Cabin Condensed', sans-serif;
 }
-.container{
-    background-color: #5AAA95;
+.container {
+    background-color: #5aaa95;
     min-height: auto;
     width: 350px;
     margin: auto;
@@ -22,50 +20,48 @@ body{
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.container > *{
+.container > * {
     margin: 10px 0;
 }
-
-.container  p{
+.container p {
     font-style: italic;
 }
-input{
+input {
     outline: 0;
     padding: 5px;
 }
-#addBtn{
+#addBtn {
     display: inline-block;
     padding: 5px 10px;
-    background-color: #E4B363;
+    background-color: #e4b363;
     font-family: inherit;
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 5px;
-
 }
-#addBtn:hover{
+#addBtn:hover {
     opacity: 0.9;
     background-color: #e2a749;
-    color:#4d4d4d;
+    color: #4d4d4d;
 }
 ol {
     padding-left: 10px;
 }
-ol li{
+ol li {
     text-transform: capitalize;
     padding: 8px;
     cursor: pointer;
 }
-li > button{
+li > button {
     float: right;
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-weight: 800;
 }
-li:nth-child(even){
-    background-color: #087F8C;
+li:nth-child(even) {
+    background-color: #087f8c;
 }
-.strike{
+.strike {
     text-decoration: line-through;
 }
