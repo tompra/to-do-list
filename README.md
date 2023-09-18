@@ -21,7 +21,7 @@ Use the command git clone https://github.com/repository-name...
 Once download the entire repository, you're ready to try it out.
 
 ## Project dependencies
-Javascript
-ESLint
-Prettier
-jQuery
+- Javascript
+- ESLint
+- Prettier
+- jQuery
